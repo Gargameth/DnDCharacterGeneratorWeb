@@ -4,12 +4,20 @@
 // Write your JavaScript code.
 
 function GetArrayOfRandomDiceRolls() {
-    let firstDie = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-    let secondDie = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-    let thirdDie = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-    let fourthDie = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-    let every_roll = [firstDie, secondDie, thirdDie, fourthDie];
+    let every_roll = [];
+    for (let i = 0; i < 4; i++) {
+        every_roll.push(Math.floor(Math.random() * (6 - 1 + 1) + 1));
+    }
     every_roll.sort();
     every_roll.shift();
     return every_roll;
+}
+
+function UpdateAttributeField(field_name) {
+    let field = document.querySelector(`input[name=${field_name}]`);
+    let attributeArray = GetArrayOfRandomDiceRolls();
+    let result = attributeArray.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+    console.log(result);
+    console.log(field);
+    field.value = result;
 }

@@ -8,31 +8,28 @@
     <form method="post">
         <label for="strength">Strength</label>
         <input asp-for="_str" id="attribute" name="strength" type="number" readonly="true" />
-        <button type="submit">Roll Attribute</button>
-    </form>
-    <form method="post">
+        <button type="button" onclick=UpdateAttributeField("strength")>Roll Attribute</button><br></br>
+   
         <label for="dexterity">Dexterity</label>
         <input asp-for="_dex" id="attribute" name="dexterity" type="number" readonly="true" />
-        <button type="button" onclick=GetArrayOfRandomDiceRolls()>Roll Attribute</button>
-    </form>
-    <form method="post">
+        <button type="button" onclick=UpdateAttributeField("dexterity")>Roll Attribute</button><br></br>
+    
         <label for="constitution">Constitution</label>
         <input asp-for="_con" id="attribute" name="constitution" type="number" readonly="true" />
-        <button type="button">Roll Attribute</button>
-    </form>
-    <form method="post">
+        <button type="button" onclick=UpdateAttributeField("constitution")>Roll Attribute</button><br></br>
+    
         <label for="intelligence">Intelligence</label>
         <input asp-for="_int" id="attribute" name="intelligence" type="number" readonly="true" />
-        <button type="button">Roll Attribute</button>
-    </form>
-    <form method="post">
+        <button type="button" onclick=UpdateAttributeField("intelligence")>Roll Attribute</button><br></br>
+    
         <label for="wisdom">Wisdom</label>
         <input asp-for="_wis" id="attribute" name="wisdom" type="number" readonly="true" />
-        <button type="button">Roll Attribute</button>
-    </form>
-    <form method="post">
+        <button type="button" onclick=UpdateAttributeField("wisdom")>Roll Attribute</button><br></br>
+    
         <label for="charisma">Charisma</label>
         <input asp-for="_char" id="attribute" name="charisma" type="number" readonly="true" />
-        <button type="button">Roll Attribute</button>
+        <button type="button" onclick=UpdateAttributeField("charisma")> Roll Attribute</button><br></br>
+
+        <button type="submit">Submit</button>
     </form>
 </div>
