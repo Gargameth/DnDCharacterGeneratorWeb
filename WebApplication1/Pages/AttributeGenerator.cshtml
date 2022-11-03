@@ -1,0 +1,38 @@
+﻿@page
+@model DnDCharGenWeb.Pages.AttributeGeneratorModel
+@{
+    ViewData["Title"] = "Attribute Generator";
+}
+
+<div class="text-center">
+    <form method="post">
+        <label for="strength">Strength</label>
+        <input asp-for="_str" id="attribute" name="strength" type="number" readonly="true" />
+        <button type="submit">Roll Attribute</button>
+    </form>
+    <form method="post">
+        <label for="dexterity">Dexterity</label>
+        <input asp-for="_dex" id="attribute" name="dexterity" type="number" readonly="true" />
+        <button type="button" onclick=GetArrayOfRandomDiceRolls()>Roll Attribute</button>
+    </form>
+    <form method="post">
+        <label for="constitution">Constitution</label>
+        <input asp-for="_con" id="attribute" name="constitution" type="number" readonly="true" />
+        <button type="button">Roll Attribute</button>
+    </form>
+    <form method="post">
+        <label for="intelligence">Intelligence</label>
+        <input asp-for="_int" id="attribute" name="intelligence" type="number" readonly="true" />
+        <button type="button">Roll Attribute</button>
+    </form>
+    <form method="post">
+        <label for="wisdom">Wisdom</label>
+        <input asp-for="_wis" id="attribute" name="wisdom" type="number" readonly="true" />
+        <button type="button">Roll Attribute</button>
+    </form>
+    <form method="post">
+        <label for="charisma">Charisma</label>
+        <input asp-for="_char" id="attribute" name="charisma" type="number" readonly="true" />
+        <button type="button">Roll Attribute</button>
+    </form>
+</div>
