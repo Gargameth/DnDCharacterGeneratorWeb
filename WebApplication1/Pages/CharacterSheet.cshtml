@@ -1,0 +1,22 @@
+﻿@page
+@model DnDCharGenWeb.Pages.CharacterSheetModel
+@{
+    ViewData["Title"] = "Character Sheet";
+}
+
+<div class="text-center">
+    @if (string.IsNullOrWhiteSpace(Model._str)){
+        <p>Nothing to see here</p>
+    }
+    else {
+        <h1 class="display-4">@Model._str</h1>
+    }
+    
+    <h1 class="display-4">@Model._dex</h1><br />
+    <h1 class="display-4">@Model._con</h1><br />
+    <h1 class="display-4">@Model._int</h1><br />
+    <h1 class="display-4">@Model._wis</h1><br />
+    <h1 class="display-4">@Model._char</h1><br />
+
+    <a asp-page="/Index">Return to Main page</a>
+</div>

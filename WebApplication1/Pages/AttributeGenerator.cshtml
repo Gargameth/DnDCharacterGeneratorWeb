@@ -6,30 +6,31 @@
 
 <div class="text-center">
     <form method="post">
-        <label for="strength">Strength</label>
-        <input asp-for="_str" id="attribute" name="strength" type="number" readonly="true" />
-        <button type="button" onclick=UpdateAttributeField("strength")>Roll Attribute</button><br></br>
+        <label for="_str">Strength</label>
+        <input asp-for="_str" class="attribute" id="_str" name="_str">
+        <button type="button" onclick=UpdateAttributeField("_str")>Roll Attribute</button><br></br>
    
-        <label for="dexterity">Dexterity</label>
-        <input asp-for="_dex" id="attribute" name="dexterity" type="number" readonly="true" />
-        <button type="button" onclick=UpdateAttributeField("dexterity")>Roll Attribute</button><br></br>
+        <label for="_dex">Dexterity</label>
+        <input asp-for="_dex" class="attribute" id="_dex" name="_dex">
+        <button type="button" onclick=UpdateAttributeField("_dex")>Roll Attribute</button><br></br>
     
-        <label for="constitution">Constitution</label>
-        <input asp-for="_con" id="attribute" name="constitution" type="number" readonly="true" />
-        <button type="button" onclick=UpdateAttributeField("constitution")>Roll Attribute</button><br></br>
+        <label for="_con">Constitution</label>
+        <input asp-for="_con" class="attribute" id="_con" name="_con">
+        <button type="button" onclick=UpdateAttributeField("_con")>Roll Attribute</button><br></br>
     
-        <label for="intelligence">Intelligence</label>
-        <input asp-for="_int" id="attribute" name="intelligence" type="number" readonly="true" />
-        <button type="button" onclick=UpdateAttributeField("intelligence")>Roll Attribute</button><br></br>
+        <label for="_int">Intelligence</label>
+        <input asp-for="_int" class="attribute" id="_int" name="_int">
+        <button type="button" onclick=UpdateAttributeField("_int")>Roll Attribute</button><br></br>
     
-        <label for="wisdom">Wisdom</label>
-        <input asp-for="_wis" id="attribute" name="wisdom" type="number" readonly="true" />
-        <button type="button" onclick=UpdateAttributeField("wisdom")>Roll Attribute</button><br></br>
+        <label for="_wis">Wisdom</label>
+        <input asp-for="_wis" class="attribute" id="_wis" name="_wis">
+        <button type="button" onclick=UpdateAttributeField("_wis")>Roll Attribute</button><br></br>
     
-        <label for="charisma">Charisma</label>
-        <input asp-for="_char" id="attribute" name="charisma" type="number" readonly="true" />
-        <button type="button" onclick=UpdateAttributeField("charisma")> Roll Attribute</button><br></br>
+        <label for="_char">Charisma</label>
+        <input asp-for="_char" class="attribute" id="_char" name="_char">
+        <button type="button" onclick=UpdateAttributeField("_char")> Roll Attribute</button><br></br>
 
         <button type="submit">Submit</button>
     </form>
+    <a asp-page="/Index">Return to Main page</a>
 </div>

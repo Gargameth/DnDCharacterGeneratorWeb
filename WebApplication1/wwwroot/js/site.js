@@ -14,10 +14,8 @@ function GetArrayOfRandomDiceRolls() {
 }
 
 function UpdateAttributeField(field_name) {
-    let field = document.querySelector(`input[name=${field_name}]`);
     let attributeArray = GetArrayOfRandomDiceRolls();
     let result = attributeArray.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
-    console.log(result);
-    console.log(field);
-    field.value = result;
+    let stringyResult = result.toString();
+    document.getElementById(`${field_name}`).value = stringyResult;
 }
